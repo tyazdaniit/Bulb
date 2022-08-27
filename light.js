@@ -1,9 +1,12 @@
-var $ = document;
-var bulbPic = $.getElementById("bulbPic")
+const $ = document;
+const bulbPic = $.getElementById("bulbPic");
+const turnOn = $.getElementById("turnOn");
+const turnOff = $.getElementById("turnOff");
 
-function turnOnTheBulb(){
-    bulbPic.src = "./pics/bulbon.gif";
-}
-function turnOffTheBulb(){
-    bulbPic.src = "./pics/bulboff.gif";
-}
+turnOn.addEventListener("click", () => {
+  bulbPic.src = "./pics/bulbon.gif";
+});
+
+turnOff.addEventListener("click", () => {
+  bulbPic.src = "./pics/bulboff.gif";
+});
